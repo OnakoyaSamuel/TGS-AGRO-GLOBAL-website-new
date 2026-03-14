@@ -1,12 +1,19 @@
 import React from "react";
-import heroImage from "../images/hero.jpg"; // <-- import the image
 
 function HeroSection() {
   return (
     <section
       className="hero"
       id="home"
-      style={{ background: `url(${heroImage}) no-repeat center center/cover` }}
+      style={{
+        background: "url(/images/hero.jpg) no-repeat center center/cover",
+        height: "80vh",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        color: "white",
+        textAlign: "center"
+      }}
     >
       <div className="hero-content">
         <h1>Transforming Agriculture Through Innovation</h1>
